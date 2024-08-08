@@ -19,9 +19,7 @@ const payment_getway = require("./routes/payment_getway");
 const app = express();
 //db
 mongoose
-  .connect(process.env.DATABASE, {
-    useNewUrlParser: true,
-  })
+  .connect(process.env.DATABASE)
   .then(() => console.log("DATABASE CONNECTED"));
 
 //middleware
